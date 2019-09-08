@@ -16,10 +16,11 @@ async def on_ready():
 
 @client.event
 async def ranks():
-    channel = client.get_channel(620095182871855104)
-    print(channel)
-    ranks = await client.send(channel, 'react with your rank to let everyone else know your skill')
-    await client.add_reaction(ranks, ':rose:')
+    #channel = client.get_channel(620095182871855104)
+    #print(channel)
+    #ranks = await client.send(channel, 'react with your rank to let everyone else know your skill')
+    #await client.add_reaction(ranks, ':rose:')
+    # all this doesnt work yet, find a way to put it into it's own function
 
 keep_alive()
 token = os.environ.get('DISCORD_BOT_SECRET')
